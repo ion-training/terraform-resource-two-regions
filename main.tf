@@ -18,16 +18,16 @@ provider "aws" {
 
 
 resource "aws_vpc" "vpc-eu-west1" {
-  cidr_block       = "10.202.0.0/16"
-    provider = aws
+  cidr_block = "10.202.0.0/16"
+  provider   = aws
   tags = {
     Name = "ion-web-proj"
   }
 }
 
 resource "aws_vpc" "vpc-eu-west2" {
-  cidr_block       = "10.202.0.0/16"
-    provider = aws.west2
+  cidr_block = "10.202.0.0/16"
+  provider   = aws.west2
 
   tags = {
     Name = "ion-web-proj"
