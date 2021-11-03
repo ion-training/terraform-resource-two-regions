@@ -26,7 +26,7 @@ When declaring the resource specify which providers these resources should be as
 ```
 resource "aws_vpc" "vpc-eu-west1" {
   cidr_block       = "10.202.0.0/16"
-  # provider argument can be omitted as it's referencing the default provider (one without alias)
+# provider argument can be omitted as it's referencing the default provider (one without alias)
     provider = aws
   tags = {
     Name = "web-proj-west-1"
